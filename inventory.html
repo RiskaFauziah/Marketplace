@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Inventory Management</h1>
+        <form id="inventory-form">
+            <input type="text" id="item-name" placeholder="Item Name" required />
+            <input type="number" id="item-quantity" placeholder="Quantity" required min="1" />
+            <button type="submit">Add Item</button>
+        </form>
+        <div id="form-error" style="color: red;"></div>
+        <ul id="inventory-list">
+            <!-- Inventory items dynamically loaded -->
+        </ul>        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marketplace UMKM</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Marketplace</h2>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+        <select id="filter-stock">
+            <option value="all">All</option>
+            <option value="in-stock">In Stock</option>
+            <option value="out-of-stock">Out of Stock</option>
+        </select>
+        <div id="product-list"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marketplace UMKM</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
